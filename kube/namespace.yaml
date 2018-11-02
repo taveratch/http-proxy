@@ -1,4 +1,4 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: ttc-flight-api # Change this
+  name: babel-node-starter-kit-np # Change this

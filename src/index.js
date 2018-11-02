@@ -1,16 +1,11 @@
-import centerClientRESERVE from './mock/center-client_RESERVE.json'
-import centerClientSEARCH from './mock/center-client_SEARCH.json'
 import express from 'express'
+import response from './mock/response.json'
 
 const PORT = 5000
 const app = express()
 
-app.get('/search', (req, res) => {
-  res.json(centerClientSEARCH)
-})
-
-app.post('/reserve', (req, res) => {
-  res.json(centerClientRESERVE)
+app.get('/', (req, res) => {
+  res.json(response)
 })
 
 app.listen(PORT, () => {
