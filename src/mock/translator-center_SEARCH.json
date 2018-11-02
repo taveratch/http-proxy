@@ -1,0 +1,156 @@
+{
+  "fileExtension": "search_321798123",
+  "searchResults": [
+    {
+      "bookingKey": "123djasd81273=",
+      "numberOfStops": 1,
+      "currency": "THB",
+      "flightType": "OW",
+      "flights": [
+        {
+          "flightDetail": {
+            "sourceAirport": "BKK",
+            "destinationAirport": "CNX",
+            "airlineId": "TV",
+            "flightNumber": "321B",
+            "departureDatetime": "2018-10-02T05:31:42.460Z",
+            "arrivalDatetime": "2018-10-02T05:31:42.460Z"
+          },
+          "aircraftModel": {
+            "name": "Boeing 777"
+          },
+          "cabinClass": "ECONOMY",
+          "fareDetail": {
+            "routeFare": {
+              "price": 800.41
+            },
+            "ancillaryFare": [
+              {
+                "key": "123",
+                "name": "Bag 15 KG.",
+                "description": "Extra 15 KG cabin bag weight.",
+                "price": 400.00,
+                "tag": "baggage" // for showing icon
+              }
+            ],
+            "totalFare": {
+              "price": 1200.41
+            }
+          },
+          "providedAncillary": { // (null, false) is not provided
+            "cabinBaggage": {
+              "unitOfMeasure": "KG",
+              "weight": 7
+            },
+            "baggage": {
+              "unitOfMeasure": "KG",
+              "weight": 30
+            },
+            "freeMeal": { "available": true },
+            "entertainment": { "available": false },
+            "powerSocket": { "available": true }
+          },
+          "tripDuration": 80
+        }
+      ]
+    },
+    {
+      "bookingKey": "123djasd81273=",
+      "numberOfStops": 1,
+      "currency": "THB",
+      "flightType": "RT",
+      "flights": [
+        {
+          "flightDetail": {
+            "sourceAirport": "BKK",
+            "destinationAirport": "CNX",
+            "airlineId": "TV",
+            "flightNumber": "321B",
+            "departureDatetime": "2018-10-02T05:31:42.460Z",
+            "arrivalDatetime": "2018-10-02T05:31:42.460Z"
+          },
+          "aircraftModel": {
+            "name": "Boeing 777"
+          },
+          "cabinClass": "ECONOMY",
+          "fareDetail": {
+            "routeFare": {
+              "price": 800.41
+            },
+            "ancillaryFare": [
+              {
+                "key": "123",
+                "name": "Bag 15 KG.",
+                "description": "Extra 15 KG cabin bag weight.",
+                "price": 400.00,
+                "tag": "baggage" // for showing icon
+              }
+            ],
+            "totalFare": {
+              "price": 1200.41
+            }
+          },
+          "providedAncillary": { // (null, false) is not provided
+            "cabinBaggage": {
+              "unitOfMeasure": "KG",
+              "weight": 7
+            },
+            "baggage": {
+              "unitOfMeasure": "KG",
+              "weight": 30
+            },
+            "freeMeal": { "available": true },
+            "entertainment": { "available": false },
+            "powerSocket": { "available": true }
+          },
+          "tripDuration": 80
+        },
+        {
+          "flightDetail": {
+            "sourceAirport": "CNX",
+            "destinationAirport": "BKK",
+            "airlineId": "TV",
+            "flightNumber": "321B",
+            "departureDatetime": "2018-10-02T05:31:42.460Z",
+            "arrivalDatetime": "2018-10-02T05:31:42.460Z"
+          },
+          "aircraftModel": {
+            "name": "Boeing 777"
+          },
+          "cabinClass": "ECONOMY",
+          "fareDetail": {
+            "routeFare": {
+              "price": 800.41
+            },
+            "ancillaryFare": [
+              {
+                "key": "123",
+                "name": "Bag 15 KG.",
+                "description": "Extra 15 KG cabin bag weight.",
+                "price": 400.00,
+                "tag": "baggage" // for showing icon
+              }
+            ],
+            "totalFare": {
+              "price": 1200.41
+            }
+          },
+          "providedAncillary": { // (null, false) is not provided
+            "cabinBaggage": {
+              "unitOfMeasure": "KG",
+              "weight": 7
+            },
+            "baggage": {
+              "unitOfMeasure": "KG",
+              "weight": 30
+            },
+            "freeMeal": { "available": true },
+            "entertainment": { "available": false },
+            "powerSocket": { "available": true }
+          },
+          "tripDuration": 80
+        }
+      ]
+    }
+  ]
+}

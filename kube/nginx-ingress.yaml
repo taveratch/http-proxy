@@ -1,0 +1,33 @@
+kind: Ingress
+apiVersion: extensions/v1beta1
+metadata:
+  name: wordpress-ingress
+  namespace: padungsilpa-group # Change this
+  annotations:
+    kubernetes.io/tls-acme: "true"
+    kubernetes.io/ingress.class: "nginx"
+    ingress.kubernetes.io/force-ssl-redirect: "true"
+    nginx.ingress.kubernetes.io/proxy-body-size: 5000m
+spec:
+  tls:
+    - hosts:
+      - padungsilpa.group # [TODO] Change this to your host
+      secretName: padungsilpa-group-tls # [TODO] Change this to anything
+    - hosts:
+      - www.padungsilpa.group
+      secretName: www-padungsilpa-group-tls # [TODO] Change this to anything  
+  rules:
+  - host: padungsilpa.group # [TODO] Change this to your host
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: wordpress-service
+          servicePort: 80
+  - host: www.padungsilpa.group # [TODO] Change this to your host
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: wordpress-service
+          servicePort: 80
