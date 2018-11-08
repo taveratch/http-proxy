@@ -1,3 +1,4 @@
+import config from 'config'
 import express from 'express'
 import response from './mock/response.json'
 
@@ -9,5 +10,5 @@ app.get('/', (req, res) => {
 })
 
 app.listen(PORT, () => {
-  console.log(`API is running on port ${PORT}`)
+  console.log(`API is running on port ${PORT} to ${config.get('api.endpoint')}`)
 })

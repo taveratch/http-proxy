@@ -6,7 +6,7 @@
   "scripts": {
     "babel-node": "babel-node",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npm run babel-node -- ./src/index.js",
+    "dev": "API_ENDPOINT=\"http://endpoint_from_env.com\" npm run babel-node -- ./src/index.js",
     "clean": "rm -rf build && mkdir build",
     "build-server": "babel -d ./build ./src -s --copy-files",
     "build": "npm run clean && npm run build-server",
@@ -19,6 +19,7 @@
     "@babel/node": "^7.0.0",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
+    "config": "^2.0.1",
     "express": "^4.16.4"
   }
 }
