@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: node-proxy-ns # Match with namespace
+  namespace: http-proxy-ns # Match with namespace
   name: http-proxy # MARK C
   labels:
     app: http-proxy # MARK C
