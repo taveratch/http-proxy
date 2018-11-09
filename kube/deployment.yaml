@@ -18,6 +18,9 @@ spec:
       containers:
       - name: http-proxy
         image: gcr.io/kubernetes-217215/http-proxy:latest
+        env:
+        - name: PORT
+          value: "5000"
         ports:
         - containerPort: 5000 # MARK C.1
         imagePullPolicy: Always
