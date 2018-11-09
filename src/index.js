@@ -5,7 +5,7 @@ const { app, proxy } = nodeProxy()
 
 const PORT = process.env.PORT || 5000
 
-app.use('/proxy', proxy)
+app.use('/', proxy)
 
 app.listen(PORT, () => {
   console.log(`API is running on port ${PORT} to ${config.get('api.endpoint')}`)

@@ -11,10 +11,10 @@ metadata:
 spec:
   tls:
     - hosts:
-      - mock.flight.codefactory.site # [TODO] Change this to your host
-      secretName: mock-flight-codefactory-site-tls # [TODO] Change this to anything
+      - proxy.codefactory.site # [TODO] Change this to your host
+      secretName: proxy-codefactory-site-tls # [TODO] Change this to anything
   rules:
-  - host: mock.flight.codefactory.site # [TODO] Change this to your host
+  - host: proxy.codefactory.site # [TODO] Change this to your host
     http:
       paths:
       - path: /
