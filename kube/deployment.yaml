@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: babel-node-starter-kit-np # Match with namespace
-  name: babel-node-starter-kit # MARK C
+  namespace: node-proxy-ns # Match with namespace
+  name: http-proxy # MARK C
   labels:
-    app: babel-node-starter-kit # MARK C
+    app: http-proxy # MARK C
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: babel-node-starter-kit # MARK C
+      app: http-proxy # MARK C
   template:
     metadata:
       labels:
-        app: babel-node-starter-kit # MARK C
+        app: http-proxy # MARK C
     spec:
       containers:
-      - name: babel-node-starter-kit
+      - name: http-proxy
         image: gcr.io/kubernetes-217215/github-taweesoft-flight-api-mock:latest
         ports:
         - containerPort: 5000 # MARK C.1

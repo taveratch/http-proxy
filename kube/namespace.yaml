@@ -1,4 +1,4 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: babel-node-starter-kit-np # Change this
+  name: http-proxy-ns # Change this
