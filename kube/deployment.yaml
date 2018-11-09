@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: http-proxy
-        image: gcr.io/kubernetes-217215/github-taweesoft-flight-api-mock:latest
+        image: gcr.io/kubernetes-217215/http-proxy:latest
         ports:
         - containerPort: 5000 # MARK C.1
         imagePullPolicy: Always
