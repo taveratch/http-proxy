@@ -21,6 +21,7 @@
     "babel-preset-env": "^1.7.0",
     "config": "^2.0.1",
     "express": "^4.16.4",
+    "node-proxy-http": "^1.0.2",
     "nodemon": "^1.18.6"
   }
 }

@@ -1,13 +1,11 @@
 import config from 'config'
-import express from 'express'
-import response from 'mock/response.json'
+import nodeProxy from 'node-proxy-http'
 
-const PORT = 5000
-const app = express()
+const { app, proxy } = nodeProxy()
 
-app.get('/', (req, res) => {
-  res.json(response)
-})
+const PORT = process.env.PORT || 5000
+
+app.use('/proxy', proxy)
 
 app.listen(PORT, () => {
   console.log(`API is running on port ${PORT} to ${config.get('api.endpoint')}`)
